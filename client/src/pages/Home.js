@@ -6,7 +6,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/links')
+    axios.get('https://linkvault-favx.onrender.com/api/links')
       .then(res => {
         setLinks(res.data);
         setLoading(false);

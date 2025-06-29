@@ -6,7 +6,7 @@ export default function AddLink() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/links/add', form);
+    await axios.post('https://linkvault-favx.onrender.com/api/links/add', form);
     setForm({ category: '', name: '', url: '' });
     alert("Link Added!");
   };
